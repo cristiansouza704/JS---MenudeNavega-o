@@ -23,13 +23,14 @@ main{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.301);
 }
 section{
-    padding-top: 100px;
+    
 }
 article{
     
 }
 img#logoloja{
-    
+    position: absolute;
+    top: 7px;
     float: left;
     padding: 2px;
 }
@@ -37,7 +38,10 @@ header#h1{
     float: right;
 }
 
+/* navegação */
+
 nav#menu{
+    margin-top: 80px;
     display: block;
 }
 nav#menu ul{
@@ -57,4 +61,66 @@ nav#menu li{
 }
 nav#menu li:hover{
     background-color: #022b8350;
+}
+/*menu*/
+ul#album-fotos{
+    width: 700px;
+    margin: 0px;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+ul#album-fotos li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid white;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+    -webkit-transition: all .4s ease-in;
+}
+ul#album-fotos li span{
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background: rgba(0, 0, 0, 0.301);
+    line-height: 370px;
+    padding: 5px;
+}
+ul#album-fotos li:hover{
+    -webkit-transform: scale(1.2);
+}
+ul#album-fotos li:hover span{
+    opacity: 1;
+}
+ul#album-fotos li#foto01{
+    background: url('../imagens/Manutencaocel.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+ul#album-fotos li#foto01:hover{
+    background-position:0px 0px;
+    background-size:200px 200px;
+}
+ul#album-fotos li#foto02{
+    background: url('../imagens/videoaulas.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+ul#album-fotos li#foto02:hover{
+    background-position:0px 0px;
+    background-size:200px 200px;
+}
+ul#album-fotos li#foto03{
+    background: url('../imagens/meutrabalhos.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+ul#album-fotos li#foto03:hover{
+    background-position:0px 0px;
+    background-size:200px 200px;
 }
